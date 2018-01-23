@@ -4,8 +4,13 @@
 </head>
 <body>
 
-<div ng-controller="DetailCtrl as detail">
+<div ng-controller="Exo03Ctrl as detail">
 	{{films}}
+</div>
+
+<div ng-if="UNFILMESTSELECTIONE">
+	<p>{{ LETITREDUFILMSELECTIONE }}<p>
+	<p>{{ LANNEEDUFILMSELECTIONE }}</p>
 </div>
 
 </body>

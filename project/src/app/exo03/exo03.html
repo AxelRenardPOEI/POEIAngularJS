@@ -6,14 +6,15 @@
 
 	<div class="container">
 
-		<div id="listeFilmes">
-			<ul>
-				<li ng-repeat="film in exo03.films"><img src={{film.img}}></li>
+		<div id="listeFilmes" >
+			<ul >
+				<li ng-repeat="film in exo03.films" ><img class="film0" ng-click="exo03.SaveFilm(film.name)" ng-class="{'Film1': exo03.controller.filmSave === 'Fast and Furious', 'Film2': SaveFilm(film.name) === '2 Fast 2 Furious', 'Film3': SaveFilm(film.name) === 'Fast & Furious: Tokyo Drift'}" src="{{film.img}}"/></li>
 			</ul>
 		</div>
 
 		<div id="detailFilm">bb 
-			<ng-include src="'src/app/exo03/exo03/detail-partial/detail.html'"></ng-include>
+			<ng-include src="'src/app/exo03/detail-partial/detail.html'"></ng-include>
+
 		</div>
 
 	</div>
