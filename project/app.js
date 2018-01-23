@@ -1,3 +1,19 @@
+angular.module('AngularExo03').config(function($routeProvider) {
+    
+        $routeProvider.when('/', {
+            templateUrl: 'src/app/home/home.html',
+            controller: 'HomeCtrl'
+        });
+
+        $routeProvider.when('/exo03', {
+            templateUrl: 'src/app/exo03/exo03.html',
+            controller: 'Exo03Ctrl'
+        });
+        /* Add New Routes Above */
+        $routeProvider.otherwise({redirectTo:'/'});
+        
+});
+
 (function() {
   'use strict';
 
