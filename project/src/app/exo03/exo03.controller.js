@@ -14,25 +14,14 @@ vm.films= [
 	{name: 'Fast & Furious: Tokyo Drift', img: 'https://image.tmdb.org/t/p/w600_and_h900_bestv2/4ceW7kWPAc2uFG5WzYDbP8Od3gw.jpg', year: 2006}
 ];
 
-    vm.SaveFilm = SaveFilm; 
+    vm.SaveFilm = SaveFilm;
+
+    vm.selected = null;
 
     function SaveFilm(nom) {
-      for (var i = vm.films.length - 1; i >= 0; i--) {
-        
-        if(vm.films[i].name === nom)
-        {
-          var filmSave = vm.films[i];
-          console.log(filmSave.name);
-        }
-      }
-      
+	vm.selected = nom;
     }
 
-vm.alert = alert;
-
-function alert(text) {
-	console.log(text);
-}
 
 }
 
@@ -41,4 +30,4 @@ Exo03Ctrl.$inject = ['$location'];
   angular.module('daproject')
     .controller('Exo03Ctrl', Exo03Ctrl);
 
-})(); 
+})();

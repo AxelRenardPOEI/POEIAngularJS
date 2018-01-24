@@ -8,7 +8,7 @@
 
 		<div id="listeFilmes" >
 			<ul >
-				<li ng-repeat="film in exo03.films" ><img class="film0" ng-click="exo03.SaveFilm(film.name)" ng-class="{'Film1': exo03.controller.filmSave === 'Fast and Furious', 'Film2': SaveFilm(film.name) === '2 Fast 2 Furious', 'Film3': SaveFilm(film.name) === 'Fast & Furious: Tokyo Drift'}" src="{{film.img}}"/></li>
+				<li ng-repeat="film in exo03.films" ><img class="film0" ng-click="exo03.SaveFilm(film.name)" ng-class="{'Film1': exo03.selected === film.name}" src="{{film.img}}"/></li>
 			</ul>
 		</div>
 
