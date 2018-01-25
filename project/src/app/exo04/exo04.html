@@ -1,0 +1,11 @@
+
+<div class=bouton>
+        <input ng-model="exo04.input"/> <button ng-click="exo04.affichernote()">Search</button>  
+</div>
+
+<div class=ville> 
+    {{exo04.superService.city}}
+</div>
+
+<div class=meteo ng-show="exo04.meteoService.meteoListe"><img  src="http://openweathermap.org/img/w/{{exo04.meteoService.meteoListe[0].weather[0].icon}}.png"/> {{exo04.meteoService.meteoListe[0].main.temp}}
+</div>
