@@ -12,7 +12,7 @@
             .then (function(response){
                 console.log('Sucess: %o', response);
                 service.meteoListe=response.data.list;
-                console.log(response.data.list);
+                console.log(service.meteoListe);
             })
             .catch(function(error){
                 console.log('Error: %0', error);
